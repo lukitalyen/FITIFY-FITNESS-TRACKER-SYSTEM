@@ -24,7 +24,7 @@ conn = mysql.connector.connect(
     database=database
 )
 
-class Fitify:
+class FitnessApp:
     def __init__(self, root):
         self.bmi = None
         self.images = { }
@@ -1470,7 +1470,7 @@ if __name__ == '__main__':
    
     root.geometry("1200x800")
     
-    app = Fitify(root)
+    app = FitnessApp(root)
     root.mainloop()
 
     conn.close()
